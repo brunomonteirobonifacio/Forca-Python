@@ -13,7 +13,7 @@ while -1 >= opcao >= len(words):
 print('')
 
 theme = words[opcao]
-rightWord = theme[random.randint(1, len(theme) - 1)].upper()
+rightWord = theme[1][random.randint(0, len(theme[1]) - 1)].upper()
 
 wordProgress = ''
 
@@ -63,3 +63,5 @@ else:
     print('Você perdeu!')
 
 print(f'Palavra correta: {rightWord}')
+
+input('\nAperte Enter para encerrar\n')
